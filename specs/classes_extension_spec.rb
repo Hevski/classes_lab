@@ -58,7 +58,7 @@ class TestLibrary < MiniTest::Test
   def test_add_new_book
     library_books = Library.new(@books)
     add_new_book = library_books.add_new_book("Help me")
-    assert_equal(@books, library_books.add_new_book)
+    assert_equal(@books, add_new_book)
   end
 
 
