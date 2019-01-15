@@ -4,6 +4,15 @@ require_relative('../classes_part_a.rb')
 
 class TestStudent < MiniTest::Test
 
+  # use this so don't have to type Student.new every time
+  # def setup()
+  #   @student = Student.new("Heather", "G11")
+  # end
+
+  # def test_get_student_name
+  #   assert_equal("Heather", @student.student_name)
+  # end
+
   def test_get_student_name
     codeclan_student = Student.new("Heather", "G11")
     assert_equal("Heather", codeclan_student.student_name)
